@@ -1,0 +1,28 @@
+{
+  "name": "@vitest/example-lit",
+  "private": true,
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:debug": "ndb npm run test"
+  },
+  "dependencies": {
+    "lit": "^2.5.0"
+  },
+  "devDependencies": {
+    "@vitest/ui": "latest",
+    "jsdom": "latest",
+    "ndb": "^1.1.5",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  }
+}
